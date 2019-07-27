@@ -1,0 +1,112 @@
+
+/* Web Fonts -------------------- */
+
+ * {-webkit-font-smoothing: antialiased; -moz-font-smoothing: grayscale;}
+
+@font-face {
+  font-family: 'Big Caslon Medium';
+  src: url('../assets/BigCaslon.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../assets/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../assets/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Icomoon Test';
+  src: url('../assets/icomoon-test.ttf') format('truetype'),
+  	url('../assets/icomoon-test.eot') format('embedded-opentype'),
+ 	url('../assets/icomoon-test.svg') format('svg'),
+  	url('../assets/icomoon-test.woff')format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* -------------------------------------------
+------------- base element styles ------------ 
+----------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	text-align: center;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2em;
+	font-family: 'Big Caslon Medium', Times, serif;
+	text-transform: uppercase;
+	color: #1F758C;
+	padding-bottom: 1em;
+	font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+	font-size: 1.625em;
+	color: #1F758C;
+	padding-bottom: 1em;
+}
+
+h3 {
+	margin: 0;
+	font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	color: #fff;
+	padding-bottom: 1em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 2em;
+	color: #939393;
+	text-align: left;
+}
+
+strong {
+	font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+}
+
+h2,
+p,
+a {
+	margin: 0;
+	font-family: 'Roboto Light', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+    font-style: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #939393;;
+	&:hover {
+	border-bottom: 1px solid;
+	}
+}
+
+a,
+button {
+	transition: .3s ease-out;
+}
+
+@media (min-width: 71.875em) {
+
+	h1 {
+		font-size: 2.625em;
+	}
+
+	h3 {
+		font-size: 1.75rem;
+	}
+}

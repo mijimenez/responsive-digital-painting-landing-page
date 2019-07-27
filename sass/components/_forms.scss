@@ -1,0 +1,119 @@
+/* form -------------------- */
+
+form {
+	text-align: left;
+	width: 90%;
+	padding: 5% 0;
+	margin: auto;
+}
+
+.form {
+		max-width: 30em;
+	}
+
+.form-container {
+	background: url('../img/bkgd-texture.jpg');
+	padding: 5% 0;
+}
+
+@media (max-width: 48em) {
+	.form-container {
+		background: url('../img/bkgd-texture-small.jpg');
+	}
+}
+
+fieldset {
+	border-style: none;
+}
+
+legend {
+	text-align: center;
+	margin: 0;
+	font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	color: #fff;
+	padding-bottom: 1em;
+}
+
+label {
+	color: #fff;
+	font-family: 'Roboto Light', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+input[type="text"] {
+	color: #939393;
+	width: 100%;
+	display: inline-block;
+	padding: .55em;
+	margin-bottom: 1em;
+	margin-top: .25em;
+	border-radius: .25em;
+	border-style: none;
+	font-size: 1em;
+}
+
+button[type="submit"] {
+	font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	width: 100%;
+	padding: 1em;
+	color: #fff;
+  	border: none;
+  	border-radius: .25em;
+	background-image: linear-gradient(90deg,#234452,#1F758B,#234452);
+    
+}
+
+
+button[type="submit"]:hover,
+input[type="text"]:hover {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+button[type="submit"]:hover {
+	background-image: linear-gradient(90deg,#00546A,#00A1BF,#00546A);
+}
+
+
+input[type="text"]:focus,
+button[type="submit"]:focus  {
+	outline: none;
+}
+
+input[type="text"]:focus {
+	-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+button[type="submit"]:focus {
+	background: #fff;
+	color: #234452;
+}
+
+
+button[type="submit"]::after {
+      content: "";
+      display: inline-block;
+      border-left: solid .4em white;
+      border-bottom: solid .4em transparent;
+      border-top: solid .4em transparent;
+      margin-left: 1em;
+      transition: all .5s;
+      bottom: 1px;
+      right: -2em;
+}

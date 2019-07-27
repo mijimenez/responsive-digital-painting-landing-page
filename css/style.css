@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/* Web Fonts -------------------- */
+/* line 4, ../sass/base/_base.scss */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Big Caslon Medium';
+  src: url("../assets/BigCaslon.ttf");
+}
+@font-face {
+  font-family: 'Roboto Light';
+  src: url("../assets/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url("../assets/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: 'Icomoon Test';
+  src: url("../assets/icomoon-test.ttf") format("truetype"), url("../assets/icomoon-test.eot") format("embedded-opentype"), url("../assets/icomoon-test.svg") format("svg"), url("../assets/icomoon-test.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* -------------------------------------------
+------------- base element styles ------------ 
+----------------------------------------------- */
+/* line 36, ../sass/base/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 40, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  text-align: center;
+}
+
+/* line 45, ../sass/base/_base.scss */
+h1 {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Big Caslon Medium', Times, serif;
+  text-transform: uppercase;
+  color: #1F758C;
+  padding-bottom: 1em;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 56, ../sass/base/_base.scss */
+h2 {
+  font-size: 1.625em;
+  color: #1F758C;
+  padding-bottom: 1em;
+}
+
+/* line 62, ../sass/base/_base.scss */
+h3 {
+  margin: 0;
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+/* line 70, ../sass/base/_base.scss */
+p {
+  font-size: 1em;
+  line-height: 2em;
+  color: #939393;
+  text-align: left;
+}
+
+/* line 77, ../sass/base/_base.scss */
+strong {
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+}
+
+/* line 81, ../sass/base/_base.scss */
+h2,
+p,
+a {
+  margin: 0;
+  font-family: 'Roboto Light', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 90, ../sass/base/_base.scss */
+a {
+  text-decoration: none;
+  color: #939393;
+}
+/* line 93, ../sass/base/_base.scss */
+a:hover {
+  border-bottom: 1px solid;
+}
+
+/* line 98, ../sass/base/_base.scss */
+a,
+button {
+  transition: .3s ease-out;
+}
+
+@media (min-width: 71.875em) {
+  /* line 105, ../sass/base/_base.scss */
+  h1 {
+    font-size: 2.625em;
+  }
+
+  /* line 109, ../sass/base/_base.scss */
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+/* -------------------------------------------
+------------- Base Layout Styles ------------ 
+----------------------------------------------- */
+/* line 5, ../sass/layout/_layout.scss */
+header {
+  background-color: #CFCFCF;
+  padding-top: 5%;
+}
+/* line 8, ../sass/layout/_layout.scss */
+header::after {
+  content: "";
+  background: url("../img/grey-brushstrokes.jpg");
+  display: block;
+  width: 100%;
+  height: -7em;
+  padding-bottom: 20%;
+  background-size: cover;
+}
+/* line 17, ../sass/layout/_layout.scss */
+header .logo {
+  width: 8.125em;
+  height: 2em;
+}
+
+@media (max-width: 47.9em) {
+  /* line 24, ../sass/layout/_layout.scss */
+  .welcome-message {
+    display: flex;
+    text-align: left;
+    align-content: center;
+    width: 85%;
+    margin: auto;
+  }
+  /* line 31, ../sass/layout/_layout.scss */
+  .welcome-message::before {
+    content: "";
+    background: url("../img/hero-image.jpg");
+    display: block;
+    width: 20em;
+    max-width: 11em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 48em) {
+  /* line 44, ../sass/layout/_layout.scss */
+  .welcome-firstform {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+  /* line 48, ../sass/layout/_layout.scss */
+  .welcome-firstform::before {
+    content: "";
+    background: url("../img/hero-image.jpg");
+    display: block;
+    width: 26em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5%;
+    margin-top: 5em;
+  }
+}
+@media (min-width: 48em) and (min-width: 60em) {
+  /* line 48, ../sass/layout/_layout.scss */
+  .welcome-firstform::before {
+    width: 30em;
+  }
+}
+@media (min-width: 48em) and (min-width: 60em) {
+  /* line 61, ../sass/layout/_layout.scss */
+  .welcome-firstform .cta-content {
+    margin-left: auto;
+    width: 60%;
+  }
+}
+
+/* Primary Content-------------------- */
+/* line 75, ../sass/layout/_layout.scss */
+.primary-content::after {
+  content: "";
+  display: block;
+  height: 16em;
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 48em) {
+  /* line 84, ../sass/layout/_layout.scss */
+  .receive-rows {
+    display: flex;
+    margin-left: 1em;
+  }
+}
+/* line 89, ../sass/layout/_layout.scss */
+.receive-rows .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 48em) {
+  /* line 89, ../sass/layout/_layout.scss */
+  .receive-rows .item {
+    flex: 1;
+    padding: 1em;
+  }
+}
+@media (max-width: 48em) {
+  /* line 98, ../sass/layout/_layout.scss */
+  .receive-rows .item:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+
+/* Secondary Content -------------------- */
+/* line 111, ../sass/layout/_layout.scss */
+.student {
+  padding: 3em 0;
+  background: #fff;
+  margin-top: 9em;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+/* line 119, ../sass/layout/_layout.scss */
+.student-content {
+  width: 90%;
+  margin: auto;
+}
+/* line 123, ../sass/layout/_layout.scss */
+.student-pic {
+  width: 12.5em;
+  border-radius: 50%;
+  position: absolute;
+  top: -6.25em;
+  left: calc(50% - 6.25em);
+}
+@media (min-width: 71.875em) {
+  /* line 111, ../sass/layout/_layout.scss */
+  .student {
+    flex: 1;
+  }
+  /* line 132, ../sass/layout/_layout.scss */
+  .student:not(:first-child) {
+    margin-left: 1em;
+  }
+  /* line 135, ../sass/layout/_layout.scss */
+  .student-rows {
+    display: flex;
+  }
+}
+
+/* line 142, ../sass/layout/_layout.scss */
+.quote {
+  margin-top: 6em;
+}
+
+/* line 146, ../sass/layout/_layout.scss */
+.name {
+  margin-top: 3em;
+}
+
+/* footer -------------------- */
+/* line 154, ../sass/layout/_layout.scss */
+footer {
+  padding: 1em 0;
+}
+/* line 156, ../sass/layout/_layout.scss */
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+}
+@media (min-width: 48em) {
+  /* line 156, ../sass/layout/_layout.scss */
+  footer .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* line 169, ../sass/layout/_layout.scss */
+.privacy-terms {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 174, ../sass/layout/_layout.scss */
+.privacy {
+  margin-right: 1em;
+}
+
+/* containers -------------------- */
+/* line 3, ../sass/layout/_containers.scss */
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 10% 0;
+}
+
+/* line 38, ../sass/components/_icons.scss */
+.private::after {
+  content: "";
+  font-family: 'Icomoon Test';
+  display: block;
+  font-size: 3em;
+  color: #E8A2A3;
+  padding: .3em 0.35em;
+  border: .05em solid #E8A2A3;
+  border-radius: 50%;
+  margin-top: .25em;
+}
+
+/* line 38, ../sass/components/_icons.scss */
+.group::after {
+  content: "";
+  font-family: 'Icomoon Test';
+  display: block;
+  font-size: 3em;
+  color: #E8A2A3;
+  padding: .3em 0.35em;
+  border: .05em solid #E8A2A3;
+  border-radius: 50%;
+  margin-top: .25em;
+}
+
+/* line 38, ../sass/components/_icons.scss */
+.package::after {
+  content: "";
+  font-family: 'Icomoon Test';
+  display: block;
+  font-size: 3em;
+  color: #E8A2A3;
+  padding: .3em 0.35em;
+  border: .05em solid #E8A2A3;
+  border-radius: 50%;
+  margin-top: .25em;
+}
+
+/* form -------------------- */
+/* line 3, ../sass/components/_forms.scss */
+form {
+  text-align: left;
+  width: 90%;
+  padding: 5% 0;
+  margin: auto;
+}
+
+/* line 10, ../sass/components/_forms.scss */
+.form {
+  max-width: 30em;
+}
+
+/* line 14, ../sass/components/_forms.scss */
+.form-container {
+  background: url("../img/bkgd-texture.jpg");
+  padding: 5% 0;
+}
+
+@media (max-width: 48em) {
+  /* line 20, ../sass/components/_forms.scss */
+  .form-container {
+    background: url("../img/bkgd-texture-small.jpg");
+  }
+}
+/* line 25, ../sass/components/_forms.scss */
+fieldset {
+  border-style: none;
+}
+
+/* line 29, ../sass/components/_forms.scss */
+legend {
+  text-align: center;
+  margin: 0;
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  padding-bottom: 1em;
+}
+
+/* line 38, ../sass/components/_forms.scss */
+label {
+  color: #fff;
+  font-family: 'Roboto Light', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 44, ../sass/components/_forms.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 55, ../sass/components/_forms.scss */
+input[type="text"] {
+  color: #939393;
+  width: 100%;
+  display: inline-block;
+  padding: .55em;
+  margin-bottom: 1em;
+  margin-top: .25em;
+  border-radius: .25em;
+  border-style: none;
+  font-size: 1em;
+}
+
+/* line 67, ../sass/components/_forms.scss */
+button[type="submit"] {
+  font-family: 'Roboto Bold', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1em;
+  color: #fff;
+  border: none;
+  border-radius: .25em;
+  background-image: linear-gradient(90deg, #234452, #1F758B, #234452);
+}
+
+/* line 80, ../sass/components/_forms.scss */
+button[type="submit"]:hover,
+input[type="text"]:hover {
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 87, ../sass/components/_forms.scss */
+button[type="submit"]:hover {
+  background-image: linear-gradient(90deg, #00546A, #00A1BF, #00546A);
+}
+
+/* line 92, ../sass/components/_forms.scss */
+input[type="text"]:focus,
+button[type="submit"]:focus {
+  outline: none;
+}
+
+/* line 97, ../sass/components/_forms.scss */
+input[type="text"]:focus {
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* line 103, ../sass/components/_forms.scss */
+button[type="submit"]:focus {
+  background: #fff;
+  color: #234452;
+}
+
+/* line 109, ../sass/components/_forms.scss */
+button[type="submit"]::after {
+  content: "";
+  display: inline-block;
+  border-left: solid .4em white;
+  border-bottom: solid .4em transparent;
+  border-top: solid .4em transparent;
+  margin-left: 1em;
+  transition: all .5s;
+  bottom: 1px;
+  right: -2em;
+}
+
+/*# sourceMappingURL=style.css.map */

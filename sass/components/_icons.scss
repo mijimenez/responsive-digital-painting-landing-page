@@ -1,0 +1,49 @@
+
+
+//=========================================
+//	OLD CSS FOR Icons
+//=========================================
+// .private::after {
+// 	content: "\e971";
+// 	font-family: 'Icomoon Test';
+// }
+
+// .group::after {
+// 	content: "\e972";
+// 	font-family: 'Icomoon Test';
+// }
+
+// .package::after {
+// 	content: "\eaae";
+// 	font-family: 'Icomoon Test';
+// }
+
+
+// .private::after,
+// .group::after,
+// .package::after {
+// 	display: block;
+// 	font-size: 3em;
+// 	color: #E8A2A3;
+// 	padding: .3em;
+// 	border: .05em solid #E8A2A3;
+// 	border-radius: 50%;
+// 	margin-top: .25em;
+
+// }
+
+
+// Loop using Lists from $products variable
+@each $product, $icon in $products {
+    .#{$product}::after {
+    	content: $icon;
+		font-family: 'Icomoon Test';
+		display: block;
+		font-size: 3em;
+		color: #E8A2A3;
+		padding: .3em 0.35em;
+		border: .05em solid #E8A2A3;
+		border-radius: 50%;
+		margin-top: .25em;
+    }
+}
